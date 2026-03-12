@@ -2,6 +2,7 @@
 import Contacts from "@/components/Contacts";
 import ProjectList from "@/components/ProjectList";
 import SimpleProject from "@/components/SimpleProject";
+import SkillList from "@/components/SkillList";
 
 export default function Home() {
 
@@ -19,16 +20,20 @@ export default function Home() {
 
         </div>
       </div>
-    {/* ABout section */}
-      <section className="grid sm:grid-cols-2 ">
+    {/* About section */}
+        <h1 className="text-3xl ps-10 py-5">Introduction</h1>
+      <section className="grid sm:grid-cols-2 px-10 sm:px-20">
         <div></div>
-        <div>
-          {/* <img src="./" alt="Professional Image of myself!" /> */}
+        <div className="place-items-end">
+          <img className="h-100 rounded-md " src="./assets/SelfeDaniel.jpg" alt="Professional Image of myself!" />
         </div>
       </section>
-
+{/* public\assets\SelfeDaniel.jpg */}
       {/* Skills Section */}
-      <section></section>
+      <section className="py-5">
+        <h1 id="skill" className="text-3xl text-center py-10">My Skills</h1>
+        <SkillList></SkillList>
+      </section>
 
       {/* Projects Section */}
       <section className="py-5">

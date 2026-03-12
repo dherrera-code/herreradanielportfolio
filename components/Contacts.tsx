@@ -10,8 +10,8 @@ const Contacts = () => {
                 <h1 className='text-2xl'>Here is my Contact info and links to my LinkedIn, Githib Account and My Resume!</h1>
                 <div className='flex justify-around py-5'>
 
-                <h1>Phone Number: (209) 542-5244</h1>
-                <h1>Email: dherr@gmail.com</h1>
+                <h1 className='text-xl'>Phone Number: (209) 542-5244</h1>
+                <h1 className='text-xl'>Email: dherr@gmail.com</h1>
                 </div>
 
                 <div className='flex justify-around pt-5'>
