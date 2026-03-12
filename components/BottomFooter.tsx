@@ -5,13 +5,14 @@ const BottomFooter = () => {
   return (
     <div>
         <Footer container className='bg-black text-white rounded-none'>
-      <FooterCopyright href="#" by="Daniel Herrera™" year={2026} />
-      <FooterLinkGroup>
+      <FooterCopyright className='ps-10' href="#" by="Daniel Herrera™" year={2026} />
+      {/* <FooterLinkGroup className='pe-10'>
         <FooterLink href="#">About</FooterLink>
         <FooterLink href="#">Privacy Policy</FooterLink>
         <FooterLink href="#">Licensing</FooterLink>
         <FooterLink href="#">Contact</FooterLink>
-      </FooterLinkGroup>
+      </FooterLinkGroup> */}
+      <p className='pe-10'>Created with Next.JS and Flowbite Libraries</p>
     </Footer>
     </div>
   )

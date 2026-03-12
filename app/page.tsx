@@ -38,8 +38,8 @@ export default function Home() {
 
       </section>
     {/* contact section */}
-      <div className="py-5">
-        <h1 className="text-3xl text-center py-10">Contact Me</h1>
+      <div className="py-5 pb-10">
+        <h1 id="contact" className="text-3xl text-center py-10">Contact Me</h1>
         <Contacts></Contacts>
 
       </div>
