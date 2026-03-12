@@ -13,7 +13,7 @@ const TopNavbar = () => {
                     <NavbarLink className='me-6 mt-1.5 text-white text-xl pt-100' href="#">
                         About
                     </NavbarLink>
-                    <NavbarLink className='me-6 mt-1.5 text-white text-xl' href="#">Skills</NavbarLink>
+                    <NavbarLink className='me-6 mt-1.5 text-white text-xl' href="#skill">Skills</NavbarLink>
                     <NavbarLink className='me-6 mt-1.5 text-white text-xl' href="#project">Projects</NavbarLink>
                     <NavbarLink className='me-6 self-center text-white' href="#contact"><Button className='text-xl'>Contact</Button></NavbarLink>
                 </NavbarCollapse>
