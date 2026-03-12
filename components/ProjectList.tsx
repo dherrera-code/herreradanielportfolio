@@ -1,5 +1,6 @@
 import React from 'react'
 import { FlipCard } from './animate-ui/components/community/flip-card'
+import AllForOneSRC from '../public/assets/my-inspiration-website.png'
 
 const ProjectList = () => {
     const data =
