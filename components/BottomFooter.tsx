@@ -4,7 +4,7 @@ import React from 'react'
 const BottomFooter = () => {
   return (
     <div>
-        <Footer container>
+        <Footer container className='bg-black text-white rounded-none'>
       <FooterCopyright href="#" by="Daniel Herrera™" year={2026} />
       <FooterLinkGroup>
         <FooterLink href="#">About</FooterLink>
