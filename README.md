@@ -37,3 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Notes: 
 I just need my About section and my Skills Section to be implemented!
+
+## Link to Hosted Portfolio:
+
+https://mango-grass-006526b1e.6.azurestaticapps.net/
