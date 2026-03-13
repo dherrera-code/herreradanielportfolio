@@ -13,22 +13,22 @@ export default function Home() {
         <div className="ps-10 pt-20">
           <div>
 
-          <h1>Daniel Herrera</h1>
-          <h1>Fullstack Developer!</h1>
+            <h1>Daniel Herrera</h1>
+            <h1>Fullstack Developer!</h1>
           </div>
           <h1 className="pt-20">Time to Save the World!</h1>
 
         </div>
       </div>
-    {/* About section */}
-        <h1 className="text-3xl ps-10 py-5">Introduction</h1>
+      {/* About section */}
+      <h1 className="text-3xl ps-10 py-5">Introduction</h1>
       <section className="grid sm:grid-cols-2 px-10 sm:px-20">
         <div></div>
         <div className="place-items-end">
           <img className="h-100 rounded-md " src="./assets/SelfeDaniel.jpg" alt="Professional Image of myself!" />
         </div>
       </section>
-{/* public\assets\SelfeDaniel.jpg */}
+
       {/* Skills Section */}
       <section className="py-5">
         <h1 id="skill" className="text-3xl text-center py-10">My Skills</h1>
@@ -42,14 +42,14 @@ export default function Home() {
         <SimpleProject></SimpleProject>
 
       </section>
-    {/* contact section */}
+      {/* contact section */}
       <div className="py-5 pb-10">
         <h1 id="contact" className="text-3xl text-center py-10">Contact Me</h1>
         <Contacts></Contacts>
 
       </div>
 
-     
+
     </main>
   );
 }
