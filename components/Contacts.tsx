@@ -8,7 +8,7 @@ const Contacts = () => {
         <div className='flex justify-center'>
             <div className='min-w-[85vw] bg-[#E5E7EB] rounded-md shadow-md p-5'>
                 <h1 className='text-2xl'>Here is my Contact info and links to my LinkedIn, Githib Account and My Resume!</h1>
-                <div className='flex justify-around py-5'>
+                <div className='flex flex-wrap gap-3 justify-around py-5'>
 
                 <h1 className='text-xl'>Phone Number: (209) 542-5244</h1>
                 <h1 className='text-xl'>Email: dherr@gmail.com</h1>

@@ -4,12 +4,11 @@ import React from 'react'
 
 const SimpleProject = () => {
     return (
-        <div className='flex flex-wrap flex-row justify-center gap-6'>
-            <Card  className="max-w-sm bg-slate-100"
+        <div className='flex flex-wrap flex-row justify-center gap-9'>
+            <Card className="max-w-sm bg-slate-100"
                 imgAlt="Meaningful alt text for an image that is not purely decorative"
                 imgSrc="../assets/my-inspiration-website.png"
             >
-
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {/* <img src='../public/assets/my-inspiration-website.png' alt="" /> */}
                     My Inspirational Person Website
@@ -28,15 +27,12 @@ const SimpleProject = () => {
                             View Code
                         </Button>
                     </Link>
-
                 </div>
             </Card>
-
            <Card  className="max-w-sm bg-slate-100"
                 imgAlt="Meaningful alt text for an image that is not purely decorative"
                 imgSrc="../assets/PokedexAPIWebsite.png"
             >
-
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {/* <img src='../public/assets/my-inspiration-website.png' alt="" /> */}
                     Pokedex Entries
@@ -55,15 +51,12 @@ const SimpleProject = () => {
                             View Code
                         </Button>
                     </Link>
-
                 </div>
             </Card>
-
             <Card  className="max-w-sm bg-slate-100"
                 imgAlt="Meaningful alt text for an image that is not purely decorative"
                 imgSrc="../assets/all-for-one-nextjsbuild.png"
             >
-
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {/* <img src='../public/assets/my-inspiration-website.png' alt="" /> */}
                     All For One with Next.js
@@ -82,7 +75,6 @@ const SimpleProject = () => {
                             View Code
                         </Button>
                     </Link>
-
                 </div>
             </Card>
 
