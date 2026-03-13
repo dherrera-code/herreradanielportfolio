@@ -31,7 +31,7 @@ const Contacts = () => {
                     <HoverCard>
                         <Link target='_blank' href='https://github.com/dherrera-code'>
                             <HoverCardTrigger>
-                                <img src="./assets/Github.png" className='w-[80px]' alt="Github Logo" />
+                                <img src="./assets/Github.svg" className='w-[80px]' alt="Github Logo!" />
                             </HoverCardTrigger>
                         </Link>
                         <HoverCardContent className='text-center'>
