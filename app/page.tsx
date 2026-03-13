@@ -21,10 +21,11 @@ export default function Home() {
 
         </div>
       </div>
-      
+      {/* eef6ff, f5f0ff f8fafc E5E7EB f3f4f6  */}
+      <div className="bg-[#eef6ff]">
+
       {/* About section */}
-      <div>
-        <section className="grid sm:grid-cols-2 px-10 sm:px-20 py-5 gap-5">
+        <section id="about" className="grid sm:grid-cols-2 px-10 sm:px-20 py-5 gap-5">
           <div>
         <h1 className="text-3xl py-5">Introduction</h1>
             {/* Add Description about me!  */}
@@ -34,7 +35,6 @@ export default function Home() {
             <img className="h-80 rounded-md" src="./assets/SelfeDaniel.jpg" alt="Professional Image of myself!" />
           </div>
         </section>
-      </div>
 
       {/* Skills Section */}
       <section className="py-5">
@@ -42,6 +42,7 @@ export default function Home() {
         <SkillList></SkillList>
       </section>
 
+      </div>
 
       {/* Projects Section */}
       <section className="py-5 pb-10">
@@ -52,7 +53,7 @@ export default function Home() {
 
 
       {/* contact section */}
-      <div className="pb-10">
+      <div className="pb-20 sm:pb-10">
         <h1 id="contact" className="text-4xl text-center py-10">Contact Me</h1>
         <Contacts></Contacts>
 

@@ -4,7 +4,6 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
 
 const Contacts = () => {
 
-
     return (
         <div className='flex justify-center'>
             <div className='min-w-[85vw] bg-[#E5E7EB] rounded-md shadow-md p-5'>
@@ -18,15 +17,21 @@ const Contacts = () => {
                 <div className='flex justify-around pt-5'>
                     <HoverCard>
                         <HoverCardTrigger>
-                            <a target='_blank' href='https://www.linkedin.com/in/daniel-herrera-1a964a3b6/' ><img src="./assets/LinkedIn.png" className='w-[80px]' alt="LinkedIn Logo to redirect to my LinkedIn page!" /></a>
+                            <div>
+                            {/* <a target='_blank' href='https://www.linkedin.com/in/daniel-herrera-1a964a3b6/'> */}
+                                <img src="./assets/LinkedIn.png" className='w-[80px]' alt="LinkedIn Logo to redirect to my LinkedIn page!"/>
+                                {/* </a> */}
+                            </div>
                         </HoverCardTrigger>
-                        <HoverCardContent>
+                        <HoverCardContent className='text-center'>
                             <a target='_blank' href='https://www.linkedin.com/in/daniel-herrera-1a964a3b6/'>Open my LinkedIn Page!</a>
                         </HoverCardContent>
                     </HoverCard>
                     <HoverCard>
                         <HoverCardTrigger>
-                            <a target='_blank' href='https://github.com/dherrera-code'><img src="./assets/Github.png" className='w-[80px]' alt="Github Logo" /></a> 
+                            {/* <a target='_blank' href='https://github.com/dherrera-code'> */}
+                            <img src="./assets/Github.png" className='w-[80px]' alt="Github Logo" />
+                            {/* </a>  */}
                         </HoverCardTrigger>
                         <HoverCardContent className='text-center'>
                             <a target='_blank' href='https://github.com/dherrera-code'>View my Github Repos!</a>
@@ -34,10 +39,11 @@ const Contacts = () => {
                     </HoverCard>
                     <HoverCard>
                         <HoverCardTrigger>
-                            <a target='_blank' href='https://github.com/dherrera-code'><img src="./assets/Resume File Btn.png" className='w-[80px]' alt="Link to open up my Resume!" /></a>
-
+                            {/* <a target='_blank' href='https://github.com/dherrera-code'> */}
+                            <img src="./assets/Resume File Btn.png" className='w-[80px]' alt="Link to open up my Resume!" />
+                            {/* </a> */}
                         </HoverCardTrigger>
-                        <HoverCardContent>
+                        <HoverCardContent className='text-center'>
                             <a target='_blank' href='https://github.com/dherrera-code'>Download my Resume PDF!</a>
                         </HoverCardContent>
                     </HoverCard>
