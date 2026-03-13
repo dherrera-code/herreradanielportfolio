@@ -1,6 +1,7 @@
 import { Card, Button } from 'flowbite-react'
 import React from 'react'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
+import Link from 'next/link'
 
 const Contacts = () => {
 
@@ -40,11 +41,12 @@ const Contacts = () => {
                     <HoverCard>
                         <HoverCardTrigger>
                             {/* <a target='_blank' href='https://github.com/dherrera-code'> */}
-                            <img src="./assets/Resume File Btn.png" className='w-[80px]' alt="Link to open up my Resume!" />
+                            <img src="./assets/file.svg" className='w-[80px]' alt="Link to open up my Resume!" />
                             {/* </a> */}
                         </HoverCardTrigger>
                         <HoverCardContent className='text-center'>
-                            <a target='_blank' href='https://github.com/dherrera-code'>Download my Resume PDF!</a>
+                            {/* <a target='_blank' href='https://github.com/dherrera-code'>Download my Resume PDF!</a> */}
+                            <Link target='_blank' href="./resumeDanielHerreraTestV1.pdf">Open Resume PDF in new tab</Link>
                         </HoverCardContent>
                     </HoverCard>
                 </div>

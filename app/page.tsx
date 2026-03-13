@@ -25,7 +25,7 @@ export default function Home() {
       <div className="bg-[#eef6ff]">
 
       {/* About section */}
-        <section id="about" className="grid sm:grid-cols-2 px-10 sm:px-20 py-5 gap-5">
+        <section id="about" className="grid sm:grid-cols-2 px-10 sm:px-20 py-5 gap-5 scroll-mt-10">
           <div>
         <h1 className="text-3xl py-5">Introduction</h1>
             {/* Add Description about me!  */}
@@ -38,7 +38,7 @@ export default function Home() {
 
       {/* Skills Section */}
       <section className="py-5">
-        <h1 id="skill" className="text-4xl text-center py-10">My Skills</h1>
+        <h1 id="skill" className="text-4xl text-center py-10 scroll-mt-10">My Skills</h1>
         <SkillList></SkillList>
       </section>
 
@@ -46,7 +46,7 @@ export default function Home() {
 
       {/* Projects Section */}
       <section className="py-5 pb-10">
-        <h1 id="project" className="text-4xl text-center pb-10">My Projects</h1>
+        <h1 id="project" className="text-4xl text-center pb-10 scroll-mt-18">My Projects</h1>
         {/* <ProjectList></ProjectList> */}
         <SimpleProject></SimpleProject>
       </section>
@@ -54,7 +54,7 @@ export default function Home() {
 
       {/* contact section */}
       <div className="pb-20 sm:pb-10">
-        <h1 id="contact" className="text-4xl text-center py-10">Contact Me</h1>
+        <h1 id="contact" className="text-4xl text-center py-10 scroll-mt-10">Contact Me</h1>
         <Contacts></Contacts>
 
       </div>
