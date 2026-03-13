@@ -5,7 +5,7 @@ import { IconButton } from './animate-ui/components/buttons/icon'
 const SkillList = () => {
     return (
         <div className='flex flex-wrap gap-5 justify-center p-3'>
-            <div className='w-[20%] place-items-center '>
+            <div className='md:w-[20%] mx-2 place-items-center '>
                 <h1 className='text-3xl'>Front-End</h1>
                 <div className='flex pt-5 gap-5 flex-wrap justify-center'>
                 <IconButton variant={"accent"} size={"lg"} >
@@ -25,7 +25,7 @@ const SkillList = () => {
                 </IconButton>
                 </div>
             </div>
-            <div className='w-[20%] place-items-center'>
+            <div className='md:w-[20%] mx-2 place-items-center'>
                 <h1 className='text-3xl'>Back-End</h1>
                 <div className='flex pt-5 gap-5 flex-wrap justify-center'>
                 <IconButton variant={"accent"} size={"lg"} >
@@ -39,7 +39,7 @@ const SkillList = () => {
                 
                 </div>
             </div>
-            <div className='w-[20%] place-items-center'>
+            <div className='md:w-[20%] mx-2 place-items-center'>
                 <h1 className='text-3xl'>Languages</h1>
 
                 <div className='flex pt-5 gap-5 flex-wrap justify-center'>
@@ -57,7 +57,7 @@ const SkillList = () => {
                 </IconButton>
                 </div>
             </div>
-            <div className='w-[20%] place-items-center'>
+            <div className='md:w-[20%] mx-2 place-items-center'>
                 <h1 className='text-3xl'>Tools</h1>
                 <div className='flex pt-5 gap-5 flex-wrap justify-center'>
                 <IconButton variant={"accent"} size={"lg"} >

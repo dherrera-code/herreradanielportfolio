@@ -16,37 +16,37 @@ const Contacts = () => {
                 </div>
 
                 <div className='flex justify-around pt-5'>
+                    {/* LinkedIn Link Card Icon */}
                     <HoverCard>
-                        <HoverCardTrigger>
-                            <div>
-                            {/* <a target='_blank' href='https://www.linkedin.com/in/daniel-herrera-1a964a3b6/'> */}
-                                <img src="./assets/LinkedIn.png" className='w-[80px]' alt="LinkedIn Logo to redirect to my LinkedIn page!"/>
-                                {/* </a> */}
-                            </div>
-                        </HoverCardTrigger>
+                        <Link target='_blank' href='https://www.linkedin.com/in/daniel-herrera-1a964a3b6/'>
+                            <HoverCardTrigger>
+                                <img src="./assets/LinkedIn.png" className='w-[80px]' alt="LinkedIn Logo to redirect to my LinkedIn page!" />
+                            </HoverCardTrigger>
+                        </Link>
                         <HoverCardContent className='text-center'>
-                            <a target='_blank' href='https://www.linkedin.com/in/daniel-herrera-1a964a3b6/'>Open my LinkedIn Page!</a>
+                            <p>Open my LinkedIn Page!</p>
                         </HoverCardContent>
                     </HoverCard>
+                    {/* Github Link Icon */}
                     <HoverCard>
-                        <HoverCardTrigger>
-                            {/* <a target='_blank' href='https://github.com/dherrera-code'> */}
-                            <img src="./assets/Github.png" className='w-[80px]' alt="Github Logo" />
-                            {/* </a>  */}
-                        </HoverCardTrigger>
+                        <Link target='_blank' href='https://github.com/dherrera-code'>
+                            <HoverCardTrigger>
+                                <img src="./assets/Github.png" className='w-[80px]' alt="Github Logo" />
+                            </HoverCardTrigger>
+                        </Link>
                         <HoverCardContent className='text-center'>
-                            <a target='_blank' href='https://github.com/dherrera-code'>View my Github Repos!</a>
+                            <p>View my Github Repos!</p>
                         </HoverCardContent>
                     </HoverCard>
+                    {/* Resume Card Icon */}
                     <HoverCard>
-                        <HoverCardTrigger>
-                            {/* <a target='_blank' href='https://github.com/dherrera-code'> */}
-                            <img src="./assets/file.svg" className='w-[80px]' alt="Link to open up my Resume!" />
-                            {/* </a> */}
-                        </HoverCardTrigger>
+                        <Link target='_blank' href='./resumeDanielHerreraTestV1.pdf'>
+                            <HoverCardTrigger>
+                                <img src="./assets/file.svg" className='w-[80px]' alt="Link to open up my Resume!" />
+                            </HoverCardTrigger>
+                        </Link>
                         <HoverCardContent className='text-center'>
-                            {/* <a target='_blank' href='https://github.com/dherrera-code'>Download my Resume PDF!</a> */}
-                            <Link target='_blank' href="./resumeDanielHerreraTestV1.pdf">Open Resume PDF in new tab</Link>
+                            <p>Open Resume PDF in new tab</p>
                         </HoverCardContent>
                     </HoverCard>
                 </div>
