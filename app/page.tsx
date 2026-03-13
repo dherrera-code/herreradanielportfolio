@@ -3,13 +3,14 @@ import Contacts from "@/components/Contacts";
 import ProjectList from "@/components/ProjectList";
 import SimpleProject from "@/components/SimpleProject";
 import SkillList from "@/components/SkillList";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export default function Home() {
 
   return (
     <main className="flex flex-col min-h-screen justify-center font-sans text-black">
       {/* Landing Page  */}
-      <div className="bg-[url('../public/assets/shapes-bg.jpg')] h-screen  text-white bg-center bg-cover text-[60px]">
+      <div className="bg-[url('../public/assets/shapes-bg.jpg')] h-screen  text-white bg-center bg-cover text-[40px] sm:text-[60px]">
         <div className="ps-10 pt-20">
           <div>
 
@@ -20,35 +21,42 @@ export default function Home() {
 
         </div>
       </div>
+      
       {/* About section */}
-      <h1 className="text-3xl ps-10 py-5">Introduction</h1>
-      <section className="grid sm:grid-cols-2 px-10 sm:px-20">
-        <div></div>
-        <div className="place-items-end">
-          <img className="h-100 rounded-md " src="./assets/SelfeDaniel.jpg" alt="Professional Image of myself!" />
-        </div>
-      </section>
+      <div>
+        <section className="grid sm:grid-cols-2 px-10 sm:px-20 py-5 gap-5">
+          <div>
+        <h1 className="text-3xl py-5">Introduction</h1>
+            {/* Add Description about me!  */}
+            <p className="text-[18px]">Since, Attending School at Codestack Academy, I honed my skills to become a Fullstack Developer where I can create a front-end Interface and back-end database and web API's from the ground up! I will always strive towards becoming a better Developer and I’m always willing to learn new skills!</p>
+          </div>
+          <div className="place-items-center">
+            <img className="h-80 rounded-md" src="./assets/SelfeDaniel.jpg" alt="Professional Image of myself!" />
+          </div>
+        </section>
+      </div>
 
       {/* Skills Section */}
       <section className="py-5">
-        <h1 id="skill" className="text-3xl text-center py-10">My Skills</h1>
+        <h1 id="skill" className="text-4xl text-center py-10">My Skills</h1>
         <SkillList></SkillList>
       </section>
 
+
       {/* Projects Section */}
-      <section className="py-5">
-        <h1 id="project" className="text-3xl text-center py-10">My Projects</h1>
+      <section className="py-5 pb-10">
+        <h1 id="project" className="text-4xl text-center pb-10">My Projects</h1>
         {/* <ProjectList></ProjectList> */}
         <SimpleProject></SimpleProject>
-
       </section>
+
+
       {/* contact section */}
-      <div className="py-5 pb-10">
-        <h1 id="contact" className="text-3xl text-center py-10">Contact Me</h1>
+      <div className="pb-10">
+        <h1 id="contact" className="text-4xl text-center py-10">Contact Me</h1>
         <Contacts></Contacts>
 
       </div>
-
 
     </main>
   );

@@ -6,7 +6,7 @@ const SkillList = () => {
     return (
         <div className='flex flex-wrap gap-5 justify-center p-3'>
             <div className='w-[20%] place-items-center '>
-                <h1>Front-End</h1>
+                <h1 className='text-3xl'>Front-End</h1>
                 <div className='flex pt-5 gap-5 flex-wrap justify-center'>
                 <IconButton variant={"accent"} size={"lg"} >
                     {/* <Icon /> */}
@@ -26,7 +26,7 @@ const SkillList = () => {
                 </div>
             </div>
             <div className='w-[20%] place-items-center'>
-                <h1>Back-End</h1>
+                <h1 className='text-3xl'>Back-End</h1>
                 <div className='flex pt-5 gap-5 flex-wrap justify-center'>
                 <IconButton variant={"accent"} size={"lg"} >
                     {/* <Icon /> */}
@@ -40,7 +40,7 @@ const SkillList = () => {
                 </div>
             </div>
             <div className='w-[20%] place-items-center'>
-                <h1>Languages</h1>
+                <h1 className='text-3xl'>Languages</h1>
 
                 <div className='flex pt-5 gap-5 flex-wrap justify-center'>
                 <IconButton variant={"accent"} size={"lg"} >
@@ -58,7 +58,7 @@ const SkillList = () => {
                 </div>
             </div>
             <div className='w-[20%] place-items-center'>
-                <h1>Tools</h1>
+                <h1 className='text-3xl'>Tools</h1>
                 <div className='flex pt-5 gap-5 flex-wrap justify-center'>
                 <IconButton variant={"accent"} size={"lg"} >
                     {/* <Icon /> */}
