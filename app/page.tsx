@@ -11,13 +11,12 @@ export default function Home() {
     <main className="flex flex-col min-h-screen justify-center font-sans text-black">
       {/* Landing Page  */}
       <div className="bg-[url('../public/assets/shapes-bg.jpg')] h-screen  text-white bg-center bg-cover text-[40px] sm:text-[60px]">
-        <div className="ps-10 pt-20">
+        <div className="ps-10 pt-40">
           <div>
-
             <h1>Daniel Herrera</h1>
             <h1>Fullstack Developer!</h1>
+            <h1 className="pt-20 text-[24px] sm:text-[30px]">Time to Save the World!</h1>
           </div>
-          <h1 className="pt-20">Time to Save the World!</h1>
 
         </div>
       </div>

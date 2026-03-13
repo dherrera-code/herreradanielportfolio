@@ -1,5 +1,3 @@
-import { Card, Button } from 'flowbite-react'
-import React from 'react'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
 import Link from 'next/link'
 
@@ -17,38 +15,49 @@ const Contacts = () => {
 
                 <div className='flex justify-around pt-5'>
                     {/* LinkedIn Link Card Icon */}
-                    <HoverCard>
+
+                    <div className='flex flex-col justify-center'>
+                        <h1 className='text-center text-lg'>LinkedIn</h1>
                         <Link target='_blank' href='https://www.linkedin.com/in/daniel-herrera-1a964a3b6/'>
-                            <HoverCardTrigger>
-                                <img src="./assets/LinkedIn.png" className='w-[80px]' alt="LinkedIn Logo to redirect to my LinkedIn page!" />
-                            </HoverCardTrigger>
+                            <img src="./assets/LinkedIn.png" className='w-[80px]' alt="LinkedIn Logo to redirect to my LinkedIn page!" />
                         </Link>
-                        <HoverCardContent className='text-center'>
-                            <p>Open my LinkedIn Page!</p>
-                        </HoverCardContent>
-                    </HoverCard>
-                    {/* Github Link Icon */}
-                    <HoverCard>
+                    </div>
+
+                    <div className='flex flex-col justify-center'>
+                        <h1 className='text-center text-lg'>GitHub</h1>
                         <Link target='_blank' href='https://github.com/dherrera-code'>
+                            <img src="./assets/Github.svg" className='w-[80px]' alt="LinkedIn Logo to redirect to my LinkedIn page!" />
+                        </Link>
+                    </div>
+
+                    <div className='flex flex-col justify-center'>
+                        <h1 className='text-center text-lg'>Resume</h1>
+                        <Link target='_blank' href='./resumeDanielHerreraTestV1.pdf'>
+                            <img src="./assets/file.svg" className='w-[80px]' alt="LinkedIn Logo to redirect to my LinkedIn page!" />
+                        </Link>
+                    </div>
+                    {/* Github Link Icon */}
+                    {/* <a target='_blank' href='https://github.com/dherrera-code'>
+                        <HoverCard>
                             <HoverCardTrigger>
                                 <img src="./assets/Github.svg" className='w-[80px]' alt="Github Logo!" />
                             </HoverCardTrigger>
-                        </Link>
-                        <HoverCardContent className='text-center'>
-                            <p>View my Github Repos!</p>
-                        </HoverCardContent>
-                    </HoverCard>
+                            <HoverCardContent className='text-center'>
+                                <p>View my Github Repos!</p>
+                            </HoverCardContent>
+                        </HoverCard>
+                    </a> */}
                     {/* Resume Card Icon */}
-                    <HoverCard>
-                        <Link target='_blank' href='./resumeDanielHerreraTestV1.pdf'>
+                    {/* <a target='_blank' href='./resumeDanielHerreraTestV1.pdf'>
+                        <HoverCard>
                             <HoverCardTrigger>
-                                <img src="./assets/file.svg" className='w-[80px]' alt="Link to open up my Resume!" />
+                                <img src="./assets/file.svg" className='w-[80px]' alt="a to open up my Resume!" />
                             </HoverCardTrigger>
-                        </Link>
-                        <HoverCardContent className='text-center'>
-                            <p>Open Resume PDF in new tab</p>
-                        </HoverCardContent>
-                    </HoverCard>
+                            <HoverCardContent className='text-center'>
+                                <p>Open Resume PDF in new tab</p>
+                            </HoverCardContent>
+                        </HoverCard>
+                    </a> */}
                 </div>
             </div>
 
