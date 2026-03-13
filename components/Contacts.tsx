@@ -26,14 +26,14 @@ const Contacts = () => {
                     <div className='flex flex-col justify-center'>
                         <h1 className='text-center text-lg'>GitHub</h1>
                         <Link target='_blank' href='https://github.com/dherrera-code'>
-                            <img src="./assets/Github.svg" className='w-[80px]' alt="LinkedIn Logo to redirect to my LinkedIn page!" />
+                            <img src="./assets/Github.svg" className='w-[80px]' alt="Github Logo!" />
                         </Link>
                     </div>
 
                     <div className='flex flex-col justify-center'>
                         <h1 className='text-center text-lg'>Resume</h1>
                         <Link target='_blank' href='./resumeDanielHerreraTestV1.pdf'>
-                            <img src="./assets/file.svg" className='w-[80px]' alt="LinkedIn Logo to redirect to my LinkedIn page!" />
+                            <img src="./assets/file.svg" className='w-[80px]' alt="File icon to open Resume!" />
                         </Link>
                     </div>
                     {/* Github Link Icon */}

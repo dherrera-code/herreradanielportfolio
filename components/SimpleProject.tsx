@@ -6,7 +6,7 @@ const SimpleProject = () => {
     return (
         <div className='flex flex-wrap flex-row justify-center gap-9'>
             <Card className="max-w-sm bg-slate-100"
-                imgAlt="Meaningful alt text for an image that is not purely decorative"
+                imgAlt="My inspirational website about my sister!"
                 imgSrc="../assets/my-inspiration-website.png"
             >
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -30,7 +30,7 @@ const SimpleProject = () => {
                 </div>
             </Card>
            <Card  className="max-w-sm bg-slate-100"
-                imgAlt="Meaningful alt text for an image that is not purely decorative"
+                imgAlt="Screenshot of Pokedex website with HTML"
                 imgSrc="../assets/PokedexAPIWebsite.png"
             >
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -54,7 +54,7 @@ const SimpleProject = () => {
                 </div>
             </Card>
             <Card  className="max-w-sm bg-slate-100"
-                imgAlt="Meaningful alt text for an image that is not purely decorative"
+                imgAlt="All for one website screenshot!"
                 imgSrc="../assets/all-for-one-nextjsbuild.png"
             >
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
