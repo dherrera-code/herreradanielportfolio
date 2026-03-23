@@ -34,7 +34,7 @@ const SkillList = () => {
                 </IconButton>
                 <IconButton variant={"accent"} size={"lg"} >
                     {/* <Icon /> */}
-                    <img src="./assets/Net Core.png" alt="Dotnet Logo" />
+                    <img src="./assets/NET core.png" alt="Dotnet Logo" />
                 </IconButton>
                 
                 </div>
@@ -74,7 +74,7 @@ const SkillList = () => {
                 </IconButton>
                 <IconButton variant={"accent"} size={"lg"} >
                     {/* <Icon /> */}
-                    <img src="./assets/postman.png" alt="Postman Logo" />
+                    <img src="./assets/Postman.png" alt="Postman Logo" />
                 </IconButton>
                 </div>
             </div>

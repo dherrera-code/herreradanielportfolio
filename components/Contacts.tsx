@@ -26,7 +26,7 @@ const Contacts = () => {
                     <div className='flex flex-col justify-center'>
                         <h1 className='text-center text-lg'>GitHub</h1>
                         <Link target='_blank' href='https://github.com/dherrera-code'>
-                            <img src="./assets/Github.svg" className='w-[80px]' alt="Github Logo!" />
+                            <img src="./assets/GitHub.svg" className='w-[80px]' alt="Github Logo!" />
                         </Link>
                     </div>
 
