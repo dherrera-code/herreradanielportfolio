@@ -10,7 +10,7 @@ const Contacts = () => {
                 <div className='flex flex-wrap gap-3 justify-around py-5'>
 
                     <h1 className='text-xl'>Phone Number: (209) 542-5244</h1>
-                    <h1 className='text-xl'>Email: dherr@gmail.com</h1>
+                    <h1 className='text-xl'>Email: dherr929@gmail.com</h1>
                 </div>
 
                 <div className='flex justify-around pt-5'>
@@ -32,7 +32,7 @@ const Contacts = () => {
 
                     <div className='flex flex-col justify-center'>
                         <h1 className='text-center text-lg'>Resume</h1>
-                        <Link target='_blank' href='./resumeDanielHerreraTestV1.pdf'>
+                        <Link target='_blank' href='./HerreraDResumeCodestack.pdf'>
                             <img src="./assets/file.svg" className='w-[80px]' alt="File icon to open Resume!" />
                         </Link>
                     </div>

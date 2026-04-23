@@ -14,7 +14,7 @@ export default function Home() {
         <div className="ps-10 pt-40">
           <div>
             <h1>Daniel Herrera</h1>
-            <h1>Fullstack Developer!</h1>
+            <h1>Web Developer!</h1>
             <h1 className="pt-20 text-[24px] sm:text-[30px]">Time to Save the World!</h1>
           </div>
 
@@ -31,7 +31,7 @@ export default function Home() {
             <p className="text-[18px]">Since, Attending School at Codestack Academy, I honed my skills to become a Fullstack Developer where I can create a front-end Interface and back-end database and web API's from the ground up! I will always strive towards becoming a better Developer and I’m always willing to learn new skills!</p>
           </div>
           <div className="place-items-center">
-            <img className="h-80 rounded-md" src="./assets/SelfeDaniel.jpg" alt="Professional Image of myself!" />
+            <img className="h-80 rounded-md" src="./assets/headshot.jpg" alt="Professional Image of myself!" />
           </div>
         </section>
 
