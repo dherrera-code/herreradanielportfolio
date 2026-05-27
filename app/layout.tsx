@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Hanken_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import TopNavbar from "@/components/TopNavbar";
@@ -17,6 +17,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const hankenFont = Hanken_Grotesk({
+  weight: '400',
+  subsets: ["latin"]
+})
+
+const jetBrainsFont = JetBrains_Mono({
+  weight: '400',
+  subsets: ['latin']
+})
+
 export const metadata: Metadata = {
   title: "Daniel Herrera",
   description: "His portfolio!",
@@ -28,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" className={cn("font-sans", inter.variable)}>
+    <html lang="en" data-scroll-behavior="smooth" className={cn("font-sans", hankenFont.className)}>
     <head>
       
     </head>
