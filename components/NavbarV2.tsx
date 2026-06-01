@@ -11,8 +11,9 @@ const NavbarV2 = () => {
                     <NavbarLink className={`me-6 md:mt-1.5 text-gray-800 text-lg`} href="/#project">Projects</NavbarLink>
                     <NavbarLink className='me-6 md:mt-1.5 text-gray-800 text-lg' href="/#skill">Stack</NavbarLink>
                     <NavbarLink className='me-6 md:mt-1.5 text-gray-800 text-lg' href="/#contact">Contact</NavbarLink>
+                    <Button className='bg-[#1F108E] text-white text-lg block md:hidden'>Resume</Button>
                 </NavbarCollapse>
-                <Button className='bg-[#1F108E] text-white text-lg'>Resume</Button>
+                <Button className='bg-[#1F108E] text-white text-lg md:block hidden'>Resume</Button>
             </Navbar>
         </div>
     )
