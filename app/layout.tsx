@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import TopNavbar from "@/components/TopNavbar";
 import BottomFooter from "@/components/BottomFooter";
+import NavbarV2 from "@/components/NavbarV2";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -22,7 +23,7 @@ const hankenFont = Hanken_Grotesk({
   subsets: ["latin"]
 })
 
-const jetBrainsFont = JetBrains_Mono({
+export const jetBrainsFont = JetBrains_Mono({
   weight: '400',
   subsets: ['latin']
 })
@@ -43,9 +44,10 @@ export default function RootLayout({
       
     </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
       >
-        <TopNavbar />
+        {/* <TopNavbar /> */}
+        <NavbarV2 />
         {children}
         <BottomFooter />
       </body>
