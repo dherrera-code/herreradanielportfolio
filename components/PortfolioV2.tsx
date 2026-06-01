@@ -1,47 +1,45 @@
-import React from 'react'
-import { AuroraBackground } from './ui/aurora-background'
-import { jetBrainsFont } from '@/app/layout'
-import { Button } from 'flowbite-react'
-import { ArrowRight } from 'lucide-react'
+import AboutSection from './componentsV2/AboutSection'
+import ContactMe from './componentsV2/ContactMe'
+import HeroSection from './componentsV2/HeroSection'
 
 
 const PortfolioV2 = () => {
     return (
-        <AuroraBackground className='bg-gray-200'>
-            <div className='grid md:grid-cols-3 gap-5 p-10 md:p-20 mb-10'>
-                <div className='col-span-2'>
-                    <h5 className='text-[#1F108E]'>D A N I E L  _  H E R R E R A</h5>
-                    <h1 className='text-4xl sm:text-6xl pt-3'>I build software that <br /><span className='text-[#4B41E1]'>solves real problems.</span></h1>
+        <>
+            <HeroSection />
+            <AboutSection />
 
-                    <p className='pt-2'>Aspiring software developer focused on web apps, UX, and clean code. Turning complex logic into intuitive digital experiences.</p>
-                    <div className='flex gap-5 pt-4'>
-                    <Button className='bg-[#3730A3]'>View Projects <ArrowRight /></Button>
-                    <Button>Contact Me</Button>
+            <ContactMe />
+            {/* <div className='bg-[#F1F3FF] h-screen grid grid-cols-2 gap-5 p-10 md:p-20'>
+                <div>
+                    <img className='h-120 place-items-center' src="/assets/headshot.jpg" alt="Daniel Herrera's Professional Headshot!" />
+                </div>
+                <div>
+                    <h1 className='text-gray-900 font-semibold text-3xl pb-4'>The Journey</h1>
+                    <p className='text-gray-500'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias impedit voluptatum, placeat veniam eveniet possimus voluptate ipsa, consequuntur vitae neque sed in repudiandae! Assumenda atque veritatis aspernatur, quasi rem exercitationem asperiores distinctio vero in voluptate consequatur esse culpa! Ex dolorum quam molestias fugit sunt rerum cumque natus incidunt, porro quia!</p>
 
+                    <h1 id='stack' className='text-gray-900 text-3xl py-4'>Technical Arsenal</h1>
+                    <div className='grid grid-cols-2'>
+                        <div className='flex flex-row flex-wrap gap-4'>
+                            <h1 className='pb-3 gap-4'>Front-End</h1>
+                           
+                                <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>React.js</p>
+                                <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>TailwindCSS</p>
+                                <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Typescript</p>
+                            
+                        </div>
+                        <div className='flex flex-row flex-wrap gap-4'>
+                            <h1 className='pb-3 gap-4'>Back-End</h1>
+                            <div>
+                                <span className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>React.js</span>
+                                <span className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>TailwindCSS</span>
+                                <span className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Typescript</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className={`${jetBrainsFont.className} hidden lg:block `}>
-                    <div className='bg-gray-900 w-90 h-60 p-5 text-gray-300 text-sm rounded-lg'>
-                        <div className='flex gap-2'>
-                            <div className='bg-red-500 rounded-full w-3.5 h-3.5 mb-2'></div>
-                            <div className='bg-purple-300 rounded-full w-3.5 h-3.5 mb-2'></div>
-                            <div className='bg-gray-100 rounded-full w-3.5 h-3.5 mb-2'></div>
-                        </div>
-                        <div>
-                            <p><span className='text-blue-500'>const</span> developer = {"{"}</p>
-                            <p className='ps-4'>name: <span className='text-orange-400'>"Daniel Herrera"</span>,</p>
-                            <p className='ps-4'>role: <span className='text-orange-400'>"Web Developer"</span>,</p>
-                            <p className='ps-4'>focus: <span className='text-orange-400'>["UX" , "Clean Code"]</span>,</p>
-                            <p className='ps-4'>status: <span className='text-orange-400'>"Building..."</span>,</p>
-                            <p>{"};"}</p>
-                            <br />
-                            <p>/* Click to view more */</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </AuroraBackground>
+            </div> */}
+        </>
     )
 }
 
