@@ -2,30 +2,49 @@ import React from 'react'
 
 const AboutSection = () => {
     return (
-        <div id='stack' className='bg-[#F1F3FF] min-h-screen grid grid-cols-2 gap-5 p-10 md:p-20'>
+        <div id='stack' className='bg-[#F1F3FF] min-h-screen grid grid-cols-1 md:grid-cols-2 gap-5 p-10 md:p-20'>
             <div className='place-items-center md:place-items-start'>
-                <img className='h-120 place-items-center' src="/assets/headshot.jpg" alt="Daniel Herrera's Professional Headshot!" />
+                <img className='max-h-120 w-auto place-items-center' src="/assets/headshot.jpg" alt="Daniel Herrera's Professional Headshot!" />
             </div>
             <div>
                 <h1 className='text-gray-900 font-semibold text-3xl pb-4'>The Journey</h1>
-                <p className='text-gray-500'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias impedit voluptatum, placeat veniam eveniet possimus voluptate ipsa, consequuntur vitae neque sed in repudiandae! Assumenda atque veritatis aspernatur, quasi rem exercitationem asperiores distinctio vero in voluptate consequatur esse culpa! Ex dolorum quam molestias fugit sunt rerum cumque natus incidunt, porro quia!</p>
+                <p className='text-gray-500 pb-4 text-[12px] md:text-[14px] lg:text-[16px]'>My journey into software development began with a year‑long full‑stack program where I built a strong foundation in modern web technologies. I gained hands‑on experience creating responsive user interfaces and implementing functionality through RESTful API endpoints, as well as designing and managing relational databases. </p>
+                <p className='text-gray-500 text-[12px] md:text-[14px] lg:text-[16px]'>I later interned at CodeStack as a Web Developer, contributing to full‑stack projects that spanned the entire development lifecycle — from front‑end features to back‑end logic and database operations. I’m comfortable working across the stack, using React and Next.js on the front end and the .NET framework with SQL on the back end to build reliable, scalable applications.</p>
 
-                <h1 className='text-gray-900 text-3xl py-4'>Technical Arsenal</h1>
-                <div className='grid grid-cols-2'>
-                    <div className='flex flex-row flex-wrap gap-4'>
-                        <h1 className='pb-3 gap-4'>Front-End</h1>
+                <h1 className='text-gray-900 font-semibold text-3xl py-4'>Technical Arsenal</h1>
 
-                        <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>React.js</p>
-                        <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>TailwindCSS</p>
-                        <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Typescript</p>
-
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
+                    <div>
+                        <h1 className='pb-3 text-[#1F108E]'>LANGUAGES</h1>
+                        <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>JavaScript</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>C#</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Typescript</p>
+                        </div>
                     </div>
-                    <div className='flex flex-row flex-wrap gap-4'>
-                        <h1 className='pb-3 gap-4'>Back-End</h1>
-                        <div>
-                            <span className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>React.js</span>
-                            <span className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>TailwindCSS</span>
-                            <span className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Typescript</span>
+                   <div>
+                        <h1 className='pb-3 text-[#1F108E]'>FRONT-END</h1>
+                        <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Next.js</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Tailwind CSS</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>React</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className='pb-3 text-[#1F108E]'>BACK-END</h1>
+                        <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>SQL</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Dotnet Core</p>
+                            {/* <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Typescript</p> */}
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className='pb-3 text-[#1F108E]'>Tools</h1>
+                        <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>VSCode</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Slack</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Azure</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Postman</p>
                         </div>
                     </div>
                 </div>
