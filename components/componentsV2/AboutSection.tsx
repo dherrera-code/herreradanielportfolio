@@ -2,8 +2,8 @@ import React from 'react'
 
 const AboutSection = () => {
     return (
-        <div id='stack' className='bg-[#F1F3FF] h-screen grid grid-cols-2 gap-5 p-10 md:p-20'>
-            <div>
+        <div id='stack' className='bg-[#F1F3FF] min-h-screen grid grid-cols-2 gap-5 p-10 md:p-20'>
+            <div className='place-items-center md:place-items-start'>
                 <img className='h-120 place-items-center' src="/assets/headshot.jpg" alt="Daniel Herrera's Professional Headshot!" />
             </div>
             <div>

@@ -1,14 +1,15 @@
 import AboutSection from './componentsV2/AboutSection'
 import ContactMe from './componentsV2/ContactMe'
 import HeroSection from './componentsV2/HeroSection'
-
+import ViewProject from './componentsV2/ViewProject'
 
 const PortfolioV2 = () => {
     return (
         <>
             <HeroSection />
             <AboutSection />
-
+            <ViewProject />
+            <hr className='text-gray-900' />
             <ContactMe />
             {/* <div className='bg-[#F1F3FF] h-screen grid grid-cols-2 gap-5 p-10 md:p-20'>
                 <div>

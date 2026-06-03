@@ -7,3 +7,9 @@ export interface IProjectData {
     HostLink: string;
     GithubLink: string;
 }
+export interface IMessageDto {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+}

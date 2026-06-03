@@ -145,3 +145,6 @@
     cursor: pointer;
   }
 }
+textarea {
+  resize: none;
+}
