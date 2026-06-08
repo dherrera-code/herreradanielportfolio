@@ -2,9 +2,9 @@ import React from 'react'
 
 const AboutSection = () => {
     return (
-        <div id='stack' className='bg-[#F1F3FF] min-h-screen grid grid-cols-1 md:grid-cols-2 gap-5 p-10 md:p-20'>
+        <div id='stack' className='bg-[#F1F3FF] min-h-screen grid grid-cols-1 md:grid-cols-2 gap-5 p-5 sm:p-10 md:p-20'>
             <div className='place-items-center md:place-items-start'>
-                <img className='max-h-120 w-auto place-items-center' src="/assets/headshot.jpg" alt="Daniel Herrera's Professional Headshot!" />
+                <img className='max-h-60 md:max-h-120 w-auto place-items-center' src="/assets/headshot.jpg" alt="Daniel Herrera's Professional Headshot!" />
             </div>
             <div>
                 <h1 className='text-gray-900 font-semibold text-3xl pb-4'>The Journey</h1>
@@ -17,34 +17,34 @@ const AboutSection = () => {
                     <div>
                         <h1 className='pb-3 text-[#1F108E]'>LANGUAGES</h1>
                         <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>JavaScript</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>C#</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Typescript</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>JavaScript</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>C#</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Typescript</p>
                         </div>
                     </div>
                    <div>
                         <h1 className='pb-3 text-[#1F108E]'>FRONT-END</h1>
                         <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Next.js</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Tailwind CSS</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>React</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Next.js</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Tailwind CSS</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>React</p>
                         </div>
                     </div>
                     <div>
                         <h1 className='pb-3 text-[#1F108E]'>BACK-END</h1>
                         <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>SQL</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Dotnet Core</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>SQL</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Dotnet Core</p>
                             {/* <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Typescript</p> */}
                         </div>
                     </div>
                     <div>
                         <h1 className='pb-3 text-[#1F108E]'>Tools</h1>
                         <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>VSCode</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Slack</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Azure</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Postman</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>VSCode</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Slack</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Azure</p>
+                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Postman</p>
                         </div>
                     </div>
                 </div>

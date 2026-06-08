@@ -6,14 +6,14 @@ import { ArrowRight } from 'lucide-react'
 const HeroSection = () => {
     return (
         <AuroraBackground className='bg-gray-200'>
-            <section className='grid md:grid-cols-3 gap-5 p-10 md:p-20 mb-10'>
+            <section className='grid md:grid-cols-3 gap-5 p-5 sm:p-10 md:p-20 mb-10'>
                 <div className='col-span-2'>
                     <h5 className='text-[#1F108E]'>D A N I E L <span className='ps-2'> H E R R E R A</span></h5>
                     <h1 className='text-4xl sm:text-6xl pt-3'>I build software that <br /><span className='text-[#4B41E1]'>solves real problems.</span></h1>
                     <p className='pt-2'>Aspiring software developer focused on web apps, UX, and clean code. Turning complex logic into intuitive digital experiences.</p>
                     <div className='flex gap-5 pt-4'>
-                        <Button className='bg-[#3730A3] px-5 py-2'>View Projects <ArrowRight /></Button>
-                        <Button className='px-5 py-2'>Contact Me</Button>
+                        <Button href='#project' className='bg-[#3730A3] px-5 py-2 group rounded-xs'>View Projects <ArrowRight className='transition-transform duration-300 ease-in-out group-hover:translate-x-3' /></Button>
+                        <Button href='#contact' className='px-5 py-2 rounded-xs'>Contact Me</Button>
                     </div>
                 </div>
                 <div className={`${jetBrainsFont.className} hidden lg:block `}>

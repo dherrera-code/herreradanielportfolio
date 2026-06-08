@@ -1,11 +1,12 @@
 "use client"
 import { IMessageDto } from '@/lib/Interface/interface';
+import { sendForm } from '@/lib/MailServices';
 import { Button, Label, TextInput } from 'flowbite-react';
 import { SendHorizontal } from 'lucide-react';
-import { div } from 'motion/react-client'
 import React, { useState } from 'react'
 
 const ContactForm = () => {
+    const [isLoading, setIsLoading] = useState<boolean>(false)
     const [messageForm, setMessageForm] = useState<IMessageDto>({
         name: "",
         email: "",
@@ -15,7 +16,6 @@ const ContactForm = () => {
 
     const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { value, id } = e.target;
-        console.log(id + " : " + value)
         setMessageForm((prev) => ({ ...prev, [id]: value }))
     }
 
@@ -24,23 +24,32 @@ const ContactForm = () => {
         if (!messageForm.name.trim() || !messageForm.email.trim() || !messageForm.subject || !messageForm.message) {
             // display error message
             alert("Form is invalid!")
-            console.log(messageForm)
         }
         else {
             // lets add functionality to connect SMTP!
-            console.log("Form is valid")
-            setMessageForm({
-                name: "",
-                email: "",
-                subject: "",
-                message: ""
-            })
+            setIsLoading(true);
+            try {
+                let result = sendForm(messageForm);
+                console.log(result)
+                // add logic when result is true, display error message!
+            } catch (error) {
+                console.log(error); //lets add error message in the contact form for fialed to send message!
+            }
+            finally {
+                // setMessageForm({
+                //     name: "",
+                //     email: "",
+                //     subject: "",
+                //     message: ""
+                // })
+                setIsLoading(false);
+            }
         }
     }
 
     return (
         <form onSubmit={handleSubmit} className="grid p-8 m-5 round items-center bg-white border border-gray-200 shadow-sm flex-col gap-4">
-            <div className='grid grid-cols-2 gap-6'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
 
                 <div>
                     <div className="mb-2 block">
@@ -76,21 +85,21 @@ const ContactForm = () => {
                         placeholder='Project Inquiry'
                         required />
                 </div>
-                <div className=' py-5'>
+                <div className='py-5'>
                     <div className="mb-2 block">
                         <Label className='font-semibold' htmlFor="message">Message</Label>
                     </div>
-                    <textarea 
-                    value={messageForm.message}
-                    onChange={handleInput}
-                    className='border border-gray-300 py-3 px-4 w-full text-gray-500 h-35 flex overflow-y-auto justify-start items-start text-left align-top' 
-                    id="message" 
-                    placeholder="Enter message here!" 
-                    required 
+                    <textarea
+                        value={messageForm.message}
+                        onChange={handleInput}
+                        className='border border-gray-300 py-3 px-4 w-full text-gray-500 h-40 overflow-y-auto  resize-none'
+                        id="message"
+                        placeholder="Enter message here!"
+                        required
                     />
                 </div>
             </div>
-            <Button className='place-items-center' type="submit">Send Message <SendHorizontal className='ps-2 transition-transform duration-300 ease-in-out hover:translate-x-3' /> </Button>
+            <Button disabled={isLoading} className='place-items-center group' type="submit">Send Message <SendHorizontal className='ps-2 transition-transform duration-300 ease-in-out group-hover:translate-x-3' /> </Button>
         </form>
     );
 }

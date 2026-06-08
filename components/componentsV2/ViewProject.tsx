@@ -7,24 +7,24 @@ const ViewProject = () => {
     const projects: IProjectData[] = MyProjectsData
 
     return (
-        <div id='project' className='bg-gray-50 h-screen p-10 md:p-20 flex flex-col '>
+        <div className='bg-gray-50 p-5 sm:p-10 md:p-20 flex flex-col '>
             <div className='pb-5 flex justify-between '>
                 <div>
-                    <h1 className='text-5xl font-semibold pb-3'>Selected Projects</h1>
-                    <p className='text-gray-500'>Here is a collection of applications focusing on performance, accessibility, and clean design</p>
+                    <h1 className='text-3xl md:text-5xl font-semibold pb-3'>Selected Projects</h1>
+                    <p className='text-[14px] lg:text-[16px] text-gray-500'>Here is a collection of applications focusing on performance, accessibility, and clean design</p>
                 </div>
                 <div className='text-gray-400 text-lg flex items-center'>
-                    <p className='text-sm'>03 / Project Total</p>
+                    <p className='text-sm hidden md:block'>03 / Project Total</p>
                 </div>
             </div>
             <div className='pb-10 '>
                 <div className='flex flex-wrap flex-row items-center justify-center gap-9'>
                     {projects.map((project) => (
-                        <Card key={project.Id} className="max-w-sm bg-slate-100"
+                        <Card key={project.Id} className="max-w-sm bg-slate-100 hover-card hover:border hover:border-black"
                             imgAlt={project.Title}
                             imgSrc={project.ImgSrc}
                         >
-                            <div>
+                            <div >
                                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-2">
                                     {project.Title}
                                 </h5>
@@ -33,12 +33,12 @@ const ViewProject = () => {
                                 </p>
                                 <div className='grid grid-cols-2 gap-10 pt-5 place-items-center'>
                                     <Link target='_blank' href={project.HostLink}>
-                                        <Button className='rounded-xs px-10 hover:bg-[#6b63d1] bg-[#3730A3]' >
+                                        <Button className='px-10 text-[14px] lg:text-[16px] hover:bg-[#6b63d1] bg-[#3730A3] whitespace-nowrap' >
                                             Live Demo
                                         </Button>
                                     </Link>
                                     <Link target='_blank' href={project.GithubLink}>
-                                        <Button className='rounded-xs px-10 text-black border hover:bg-gray-200! bg-white border-[#3730A3]'>
+                                        <Button className='px-10 text-black border hover:bg-gray-200! bg-white border-[#3730A3]'>
                                             Source
                                         </Button>
                                     </Link>
