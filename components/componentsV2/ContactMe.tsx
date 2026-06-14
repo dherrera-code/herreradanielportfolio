@@ -4,7 +4,7 @@ import ContactForm from './ContactForm'
 
 const ContactMe = () => {
   return (
-    <div className='bg-[#F1F3FF] md:h-screen p-5 sm:p-10 md:p-20 grid grid-cols-1 md:grid-cols-2 '>
+    <div className='bg-[#F1F3FF] md:min-h-screen p-5 sm:p-10 md:p-20 grid grid-cols-1 md:grid-cols-2 '>
       <div>
         <h1 className='text-gray-900 text-4xl font-semibold pb-5'>Contact Me</h1>
         <p>If you have any inquiries about discussing new projects or opportunities, please reach out and I will reply at my earliest convenience!</p>

@@ -1,10 +1,15 @@
+import { p } from 'motion/react-client'
 import React from 'react'
 
 const AboutSection = () => {
+    const languages = ["JavaScript", "C#", "Typescript"]
+    const backEnd = ["SQL", "Dotnet Core", "EF Core"]
+    const frontEnd = ["Next.js", "React", "TailwindCSS", "Bootstrap"]
+    const tools = ["VSCode", "Slack", "Azure", "Postman", "AI"]
     return (
         <div id='stack' className='bg-[#F1F3FF] min-h-screen grid grid-cols-1 md:grid-cols-2 gap-5 p-5 sm:p-10 md:p-20'>
-            <div className='place-items-center md:place-items-start'>
-                <img className='max-h-60 md:max-h-120 w-auto place-items-center' src="/assets/headshot.jpg" alt="Daniel Herrera's Professional Headshot!" />
+            <div className='place-items-center md:place-items-start md:ps-8'>
+                <img className='max-h-60 md:max-h-120 w-auto place-items-center shadow-lg' src="/assets/headshot.jpg" alt="Daniel Herrera's Professional Headshot!" />
             </div>
             <div>
                 <h1 className='text-gray-900 font-semibold text-3xl pb-4'>The Journey</h1>
@@ -17,34 +22,33 @@ const AboutSection = () => {
                     <div>
                         <h1 className='pb-3 text-[#1F108E]'>LANGUAGES</h1>
                         <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>JavaScript</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>C#</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Typescript</p>
+                            {languages.map((lang, idx) => (
+                                <p key={idx} title={lang} className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>{lang}</p>
+                            ))}
                         </div>
                     </div>
-                   <div>
+                    <div>
                         <h1 className='pb-3 text-[#1F108E]'>FRONT-END</h1>
                         <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Next.js</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Tailwind CSS</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>React</p>
+                            {frontEnd.map((frontE, idx) => (
+                                <p key={idx} title={frontE} className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>{frontE}</p>
+                            ))}
                         </div>
                     </div>
                     <div>
                         <h1 className='pb-3 text-[#1F108E]'>BACK-END</h1>
                         <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>SQL</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Dotnet Core</p>
-                            {/* <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md'>Typescript</p> */}
+                            {backEnd.map((backE, idx) => (
+                                <p key={idx} title={backE} className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]' >{backE}</p>
+                            ))}
                         </div>
                     </div>
                     <div>
                         <h1 className='pb-3 text-[#1F108E]'>Tools</h1>
                         <div className='flex flex-row flex-wrap gap-y-2 gap-x-2'>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>VSCode</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Slack</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Azure</p>
-                            <p className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>Postman</p>
+                            {tools.map((tool, idx) => (
+                                <p key={idx} title='tool' className='px-3 py-2 me-2 bg-white rounded-md border shadow-md text-[14px] lg:text-[16px]'>{tool}</p>
+                            ))}
                         </div>
                     </div>
                 </div>
