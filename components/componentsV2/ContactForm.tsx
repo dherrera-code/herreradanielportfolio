@@ -43,7 +43,6 @@ const ContactForm = () => {
                     let result = await sendForm(messageForm);
                     if (result) {
                         setBoolError(false);
-
                         setResultMessage("Message Successfully Sent!")
                     }
                     else {
@@ -54,6 +53,7 @@ const ContactForm = () => {
                 // add logic when result is true, display error message!
             } catch (error) {
                 // console.log(error); //lets add error message in the contact form for fialed to send message!
+                setBoolError(true)
                 setResultMessage("Error: Unable to send Message.")
             }
             finally {
