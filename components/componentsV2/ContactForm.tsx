@@ -72,9 +72,9 @@ const ContactForm = () => {
     return (
         <div>
             {boolDisplayMessage &&
-                <div className={`flex items-center justify-between mx-5 shadow-md border rounded-xl ${boolError ? "border-red-800 text-red-800 bg-red-100" : 'border-green-800 text-green-800 bg-green-100'}`}>
+                <div className={`flex items-center justify-between mx-5 shadow-md border rounded-xl ${boolError ? "border-red-800 text-red-800 bg-red-100" : 'border-green-500 text-emerald-700 bg-green-100'}`}>
                     <p className={`items-center px-4 py-3`}>{resultMessage}</p>
-                    <button className={`hover:text-gray-800 hover:bg-white me-5 p-1 rounded-full ${boolError ? "text-red-600" : "text-green-600"} `} onClick={handleCloseToast}><X className='' /></button>
+                    <button className={`me-5 p-1 `} onClick={handleCloseToast}><X size={30} className={`rounded-full hover:text-gray-800 ${boolError ? "hover:bg-red-200" : "hover:bg-green-200"} p-1`} /></button>
                 </div>
             }
 
