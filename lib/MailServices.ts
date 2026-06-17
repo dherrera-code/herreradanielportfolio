@@ -1,5 +1,5 @@
 import { IMessageDto } from './Interface/interface';
-import { POST } from './fetchService/emailFetch';
+import emailjs from "@emailjs/browser";
 
 export const sendForm = async ({ name, email, subject, message }: IMessageDto) => {
     const params: Record<string, unknown> = {
@@ -10,9 +10,15 @@ export const sendForm = async ({ name, email, subject, message }: IMessageDto) =
     }
 
     try {
-        const response = await POST(params)
-        console.log(response)
-        return response;
+        const response = await emailjs.send(
+            process.env.NEXT_PUBLIC_SERVICE_ID!,
+            process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+            params,
+            process.env.NEXT_PUBLIC_PUBLIC_KEY!,
+        )
+        if(response.status == 200)
+            return true;
+        return true;
     }
     catch (error) {
         console.log('FAILED...', error)
