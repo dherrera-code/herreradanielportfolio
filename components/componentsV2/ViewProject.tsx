@@ -11,7 +11,7 @@ const ViewProject = () => {
             <div className='pb-5 flex justify-between '>
                 <div>
                     <h1 className='text-3xl md:text-5xl font-semibold pb-3'>Selected Projects</h1>
-                    <p className='text-[14px] lg:text-[16px] text-gray-500'>Here is a collection of applications focusing on performance, accessibility, and clean design</p>
+                    <p className='text-[0.875rem] lg:text-[1rem] text-gray-500'>Here is a collection of applications focusing on performance, accessibility, and clean design</p>
                 </div>
                 <div className='text-gray-400 text-lg flex items-center'>
                     <p className='text-sm hidden md:block'>03 / Project Total</p>
