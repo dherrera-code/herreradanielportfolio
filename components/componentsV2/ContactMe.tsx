@@ -1,5 +1,4 @@
-import { LocateIcon, Mail, MapPin, Phone } from 'lucide-react'
-import React from 'react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 import ContactForm from './ContactForm'
 
 const ContactMe = () => {
