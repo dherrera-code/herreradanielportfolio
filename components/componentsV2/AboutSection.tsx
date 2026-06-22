@@ -11,8 +11,8 @@ const AboutSection = () => {
             </div>
             <div>
                 <h1 className='text-gray-900 font-semibold text-3xl pb-4'>The Journey</h1>
-                <p className='text-gray-500 pb-4 text-[0.75rem] md:text-[0.875rem] lg:text-[1rem]'>My journey into software development began with a year‑long full‑stack program where I built a strong foundation in modern web technologies. I gained hands‑on experience creating responsive user interfaces and implementing functionality through RESTful API endpoints, as well as designing and managing relational databases. </p>
-                <p className='text-gray-500 text-[0.75rem] md:text-[0.875rem] lg:text-[1rem]'>I later interned at CodeStack as a Web Developer, contributing to full‑stack projects that spanned the entire development lifecycle — from front‑end features to back‑end logic and database operations. I’m comfortable working across the stack, using React and Next.js on the front end and the .NET framework with SQL on the back end to build reliable, scalable applications.</p>
+                <p className='text-gray-500 pb-4 text-[0.75rem] md:text-[0.875rem] lg:text-[1rem]'>My journey into software development began with a year‑long full‑stack program where I built a strong foundation in modern web technologies. I gained hands‑on experience creating responsive user interfaces and implementing functionality through RESTful API endpoints, as well as designing and managing relational databases via SQL. </p>
+                <p className='text-gray-500 text-[0.75rem] md:text-[0.875rem] lg:text-[1rem]'>I later interned at CodeStack as a Web Developer, contributing to full‑stack projects that spanned the entire development lifecycle — from front‑end features to back‑end logic and database operations. I’m comfortable working across the stack, using React and Next.js on the front end and .NET framework with SQL on the back end to build reliable, scalable applications.</p>
 
                 <h1 className='text-gray-900 font-semibold text-3xl py-4'>Technical Arsenal</h1>
 
