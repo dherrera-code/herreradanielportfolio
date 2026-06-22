@@ -13,7 +13,7 @@ const NavbarV2 = () => {
                     <NavbarLink className='me-6 md:mt-1.5 text-gray-800 text-lg' href="/#contact">Contact</NavbarLink>
                     <a target='_blank' href='./HerreraDResumeCodestack.pdf' className='bg-[#1F108E] px-5 py-2 rounded-xl text-center text-white text-lg block md:hidden'>Resume</a>
                 </NavbarCollapse>
-                <a target='_blank' href='./HerreraDResumeCodestack.pdf' className='bg-[#1F108E] px-5 py-2 rounded-xl text-white text-lg md:block hidden'>Resume</a>
+                <a download='./HerreraDResumeCodestack.pdf' href='./HerreraDResumeCodestack.pdf' className='bg-[#1F108E] px-5 py-2 rounded-xl text-white text-lg md:block hidden'>Resume</a>
             </Navbar>
         </div>
     )

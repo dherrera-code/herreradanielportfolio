@@ -5,10 +5,10 @@ const AboutSection = () => {
     const languages = ["JavaScript", "C#", "Typescript"]
     const backEnd = ["SQL", "Dotnet Core", "EF Core"]
     const frontEnd = ["Next.js", "React", "TailwindCSS", "Bootstrap"]
-    const tools = ["VSCode", "Slack", "Azure", "Postman", "AI"]
+    const tools = ["VSCode", "Slack", "Azure", "Postman"]
     return (
         <div id='stack' className='bg-[#F1F3FF] min-h-screen grid grid-cols-1 md:grid-cols-2 gap-5 p-5 sm:p-10 md:p-20'>
-            <div className='place-items-center md:place-items-start md:ps-8'>
+            <div className='place-items-center mx-auto sm:mx-0 md:place-items-start md:ps-8'>
                 <img className='max-h-60 md:max-h-120 w-auto place-items-center shadow-lg' src="/assets/headshot.jpg" alt="Daniel Herrera's Professional Headshot!" />
             </div>
             <div>
