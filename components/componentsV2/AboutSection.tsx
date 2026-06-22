@@ -1,5 +1,3 @@
-import { p } from 'motion/react-client'
-import React from 'react'
 
 const AboutSection = () => {
     const languages = ["JavaScript", "C#", "Typescript"]

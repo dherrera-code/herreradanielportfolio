@@ -18,27 +18,27 @@ const ViewProject = () => {
                 </div>
             </div>
             <div className='pb-10 '>
-                <div className='flex flex-wrap flex-row items-center justify-center gap-9'>
+                <div className='flex items-stretch flex-wrap flex-row justify-center gap-9'>
                     {projects.map((project) => (
                         <Card key={project.Id} className="max-w-sm bg-slate-100 hover-card hover:border hover:border-black"
                             imgAlt={project.Title}
                             imgSrc={project.ImgSrc}
                         >
-                            <div >
-                                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-2">
+                            <div className='flex flex-col justify-between!'>
+                                <h5 className="text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-2">
                                     {project.Title}
                                 </h5>
-                                <p className="font-normal text-gray-700 dark:text-gray-400">
+                                <p className="font-normal text-[0.825rem] text-gray-700 dark:text-gray-400">
                                     {project.Description}
                                 </p>
                                 <div className='grid grid-cols-2 gap-10 pt-5 place-items-center'>
                                     <Link target='_blank' href={project.HostLink}>
-                                        <Button className='px-10 text-[14px] lg:text-[16px] hover:bg-[#6b63d1] bg-[#3730A3] whitespace-nowrap' >
+                                        <Button className='px-10 text-[0.75rem] lg:text-[1rem] hover:bg-[#6b63d1] bg-[#3730A3] whitespace-nowrap' >
                                             Live Demo
                                         </Button>
                                     </Link>
                                     <Link target='_blank' href={project.GithubLink}>
-                                        <Button className='px-10 text-black border hover:bg-gray-200! bg-white border-[#3730A3]'>
+                                        <Button className='px-10 text-[0.75rem] lg:text-[1rem] text-black border hover:bg-gray-200 bg-white border-[#3730A3]'>
                                             Source
                                         </Button>
                                     </Link>
