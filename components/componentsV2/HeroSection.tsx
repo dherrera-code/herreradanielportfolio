@@ -23,7 +23,7 @@ const HeroSection = () => {
                             <div className='bg-purple-400 rounded-full w-3.5 h-3.5 mb-2'></div>
                             <div className='bg-gray-100 rounded-full w-3.5 h-3.5 mb-2'></div>
                         </div>
-                        <div className='z-600'>
+                        <div className='z-100'>
                             <p><span className='text-blue-500'>const</span> developer = {"{"}</p>
                             <p className='ps-4'>name: <span className='text-orange-400'>"Daniel Herrera"</span>,</p>
                             <p className='ps-4'>role: <span className='text-orange-400'>"Web Developer"</span>,</p>
@@ -31,7 +31,7 @@ const HeroSection = () => {
                             <p className='ps-4'>status: <span className='text-orange-400'>"Building..."</span>,</p>
                             <p>{"};"}</p>
                             <br />
-                            <p>/* Click to view more */</p>
+                            <p>/* Scroll to explore */</p>
                         </div>
                     </div>
                 </div>
