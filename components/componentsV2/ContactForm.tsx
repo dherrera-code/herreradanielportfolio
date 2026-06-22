@@ -78,8 +78,8 @@ const ContactForm = () => {
                 </div>
             }
 
-            <form onSubmit={handleSubmit} className="grid p-8 my-5 sm:my-5 sm:mx-5 round items-center bg-white border border-gray-200 shadow-sm flex-col gap-4 text-[0.75rem] md:text-[1rem]">
-                <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+            <form onSubmit={handleSubmit} className="grid p-8 my-5 md:my-5 md:mx-5 round items-center bg-white border border-gray-200 shadow-sm flex-col gap-4 text-[0.75rem] md:text-[1rem]">
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                     <div>
                         <div className="mb-2 block">
                             <Label className='font-semibold' htmlFor="name">Name</Label>
