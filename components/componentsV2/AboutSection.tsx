@@ -1,9 +1,9 @@
 
 const AboutSection = () => {
-    const languages = ["JavaScript", "C#", "Typescript", "HTML", "CSS"]
-    const backEnd = ["SQL", "Dotnet Core", "EF Core"]
-    const frontEnd = ["Next.js", "React", "TailwindCSS", "Bootstrap"]
-    const tools = ["VSCode", "Slack", "Azure", "Postman"]
+    const languages = ["JavaScript", "C#", "Typescript", "HTML", "CSS"];
+    const backEnd = ["SQL", "Dotnet Core", "EF Core"];
+    const frontEnd = ["Next.js", "React", "TailwindCSS", "Bootstrap"];
+    const tools = ["VSCode", "Slack", "Azure", "Postman"];
     return (
         <div id='stack' className='bg-[#F1F3FF] min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-5 p-5 sm:p-10 md:p-20'>
             <div className='place-items-center mx-auto sm:mx-0 lg:place-items-start md:ps-8'>

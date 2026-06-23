@@ -3,19 +3,19 @@ import { IMessageDto } from '@/lib/Interface/interface';
 import { sendForm } from '@/lib/MailServices';
 import { Button, Label } from 'flowbite-react';
 import { SendHorizontal, X } from 'lucide-react';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 const ContactForm = () => {
-    const [isLoading, setIsLoading] = useState<boolean>(false)
+    const [isLoading, setIsLoading] = useState<boolean>(false);
     const [boolError, setBoolError] = useState(false);
-    const [boolDisplayMessage, setBoolDisplayMessage] = useState(false)
-    const [resultMessage, setResultMessage] = useState<string>("")
+    const [boolDisplayMessage, setBoolDisplayMessage] = useState(false);
+    const [resultMessage, setResultMessage] = useState<string>("");
     const [messageForm, setMessageForm] = useState<IMessageDto>({
         name: "",
         email: "",
         subject: "",
         message: ""
-    })
+    });
 
     const handleCloseToast = () => {
         setBoolDisplayMessage(false);
@@ -30,31 +30,26 @@ const ContactForm = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (!messageForm.name.trim() || !messageForm.email.trim() || !messageForm.subject || !messageForm.message) {
-            // display error message
-            alert("Form is invalid!")
             setResultMessage("Please make sure all input fields are entered and valid!")
             setBoolDisplayMessage(true)
         }
         else {
-            // lets add functionality to connect SMTP!
             setIsLoading(true);
             try {
                 if (typeof window !== undefined) {
                     let result = await sendForm(messageForm);
                     if (result) {
                         setBoolError(false);
-                        setResultMessage("Message Successfully Sent!")
+                        setResultMessage("Message Successfully Sent!");
                     }
                     else {
-                        setBoolError(true)
-                        setResultMessage("Unable to send Message at this time.")
+                        setBoolError(true);
+                        setResultMessage("Unable to send Message at this time.");
                     }
                 }
-                // add logic when result is true, display error message!
             } catch (error) {
-                // console.log(error); //lets add error message in the contact form for fialed to send message!
-                setBoolError(true)
-                setResultMessage("Error: Unable to send Message.")
+                setBoolError(true);
+                setResultMessage("Error: Unable to send Message.");
             }
             finally {
                 setMessageForm({
@@ -62,12 +57,19 @@ const ContactForm = () => {
                     email: "",
                     subject: "",
                     message: ""
-                })
+                });
                 setIsLoading(false);
-                setBoolDisplayMessage(true)
+                setBoolDisplayMessage(true);
             }
         }
     }
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if(boolDisplayMessage) handleCloseToast(); 
+        }, 5000)
+        return () => clearTimeout(timer);
+    }, [boolDisplayMessage])
 
     return (
         <div>
@@ -128,7 +130,7 @@ const ContactForm = () => {
                         />
                     </div>
                 </div>
-                <Button disabled={isLoading} className='place-items-center group' type="submit">Send Message <SendHorizontal className='ps-2 transition-transform duration-300 ease-in-out group-hover:translate-x-3' /> </Button>
+                <Button disabled={isLoading} className='place-items-center group' type="submit">Send Message <SendHorizontal className='ps-2 transition-transform duration-300 ease-in-out group-hover:translate-x-3' /></Button>
             </form>
         </div>
     );

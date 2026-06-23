@@ -1,5 +1,5 @@
-import { IProjectData } from '@/lib/Interface/interface'
-import { Button, Card } from 'flowbite-react'
+import { IProjectData } from '@/lib/Interface/interface';
+import { Button, Card } from 'flowbite-react';
 import { MyProjectsData } from '@/lib/ProjectData/SeedProjectData';
 import Link from 'next/link';
 
