@@ -1,7 +1,7 @@
 
 const AboutSection = () => {
     const languages = ["JavaScript", "C#", "Typescript", "HTML", "CSS"];
-    const backEnd = ["SQL", "Dotnet Core", "EF Core"];
+    const backEnd = ["SQL", ".NET Core", "EF Core"];
     const frontEnd = ["Next.js", "React", "TailwindCSS", "Bootstrap"];
     const tools = ["VSCode", "Slack", "Azure", "Postman"];
     return (
